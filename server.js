@@ -13,7 +13,9 @@ app.use(cors({
         'http://localhost:5500',
         'http://127.0.0.1:5500',
         'http://localhost:3000',
-        'http://127.0.0.1:3000'
+        'http://127.0.0.1:3000',
+        'https://www.hireinn.in',       // ✅ Add this
+        'https://hireinn.in'            // ✅ Add naked domain as well (optional but recommended)
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
