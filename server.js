@@ -92,9 +92,9 @@ app.get('/', (req, res) => {
     console.log('Root route called!'); // Debug log
     res.json({ message: 'HireInn Backend API', status: 'running' });
 });
-
+const PORT = process.env.PORT || 3000
 // For local development
-if (process.env.NODE_ENV !== 'production') {
+if (1==1) {
     const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`); // Debug log
